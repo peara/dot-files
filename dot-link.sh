@@ -14,23 +14,22 @@ for app in "${CONFS[@]}"; do
     FTYPE=$(file -b "$TNAME")
     echo "Linking ${TNAME} - $FTYPE"
     if [[ $FTYPE =~ "symbolic link" ]]; then
-      echo "Skip symbolic link"
+      echo "--> Skip symbolic link"
     elif [[ -z $FTYPE ]]; then
-      echo "Setting not found. Checking for existence of application"
-      echo "If found, then create symlink"
-      echo "Else, do nothing or ask for installing"
+      echo "--> Setting not found. Checking for existence of application"
+      echo "   TODO: If found, then create symlink"
+      echo "   TODO: Else, do nothing or ask for installing"
     elif [[ $FTYPE =~ "directory" ]]; then
-      echo "This is a directory"
-      echo "Creating backup for ${TNAME}"
+      echo "--> Creating backup for ${TNAME}"
       cp -rf ${TNAME} ${TNAME}-bak
       FNAME="`pwd`/${file##*/}"
-      echo "Moving to ${FNAME} and creating symbolic link"
+      echo "--> Moving to ${FNAME} and creating symbolic link"
       mv ${TNAME} ${FNAME} && ln -s ${FNAME} ${TNAME}
     else
-      echo "Creating backup for ${TNAME}"
+      echo "--> Creating backup for ${TNAME}"
       cp -f ${TNAME} ${TNAME}.bak
       FNAME="`pwd`/${file#.}"
-      echo "Moving to ${FNAME} and creating symbolic link"
+      echo "--> Moving to ${FNAME} and creating symbolic link"
       mv ${TNAME} ${FNAME} && ln -s ${FNAME} ${TNAME}
     fi
   done
