@@ -112,7 +112,8 @@ export PATH=$PATH:$GOPATH/bin
 COUNT_XCAPE=`pgrep -c xcape`
 if [[ $COUNT_XCAPE = 0 ]]
 then
-  xcape -t 150 -e 'Alt_L=Alt_L|B;Shift_L=Escape;Control_L=Control_L|O'
+  # xcape -t 150 -e 'Alt_L=Alt_L|B;Shift_L=Escape;Control_L=Control_L|O'
+  xcape -t 150 -e 'Alt_L=Alt_L|B'
 fi
 setopt noincappendhistory
 setopt nosharehistory
