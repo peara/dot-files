@@ -7,7 +7,7 @@ export ZSH="/home/peara/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="muse"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -99,6 +99,7 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # tmuxinator
+export TMUXINATOR_CONFIG="home/peara/.config/tmuxinator"
 source ~/.tmuxinator.zsh
 
 export NVM_DIR="$HOME/.nvm"
@@ -109,12 +110,6 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$PATH:/usr/local/go/bin export GOPATH=$HOME/projects/bcpf-v2/bcpf-api-server/fabric-env/chaincode
 export PATH=$PATH:$GOPATH/bin
 
-COUNT_XCAPE=`pgrep -c xcape`
-if [[ $COUNT_XCAPE = 0 ]]
-then
-  # xcape -t 150 -e 'Alt_L=Alt_L|B;Shift_L=Escape;Control_L=Control_L|O'
-  xcape -t 150 -e 'Alt_L=Alt_L|B'
-fi
 setopt noincappendhistory
 setopt nosharehistory
 
