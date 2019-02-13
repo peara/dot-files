@@ -106,6 +106,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# yarn bin
+export PATH="$PATH:`yarn global bin`"
+
 # For bcpf development
 export PATH=$PATH:/usr/local/go/bin export GOPATH=$HOME/projects/bcpf-v2/bcpf-api-server/fabric-env/chaincode
 export PATH=$PATH:$GOPATH/bin
