@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+Continuum status	tmux.conf	/^set-option -g status-right " #[fg=colour255,bg=colour26,bold] Continuum status: #{continuum_stat/;"	k
+_tmuxinator	tmuxinator.zsh	/^_tmuxinator() {$/;"	f
+info	tmux.conf	/^set-option -g command-alias[2] "server-info=show-messages -JT"$/;"	k
+info	tmux.conf	/^set-option -g command-alias[3] "info=show-messages -JT"$/;"	k
+mux	tmuxinator.zsh	/^alias mux="tmuxinator"$/;"	a
+pane	tmux.conf	/^set-option -g command-alias[0] "split-pane=split-window"$/;"	k
+q	tmux.conf	/^set-option -g terminal-overrides[0] "xterm*:XT:Ms=\\\\E]52;%p1%s;%p2%s\\\\007:Cs=\\\\E]12;%p1%s\\/;"	k
+session	tmux.conf	/^set-option -g command-alias[5] "choose-session=choose-tree -s"$/;"	k
+splitp	tmux.conf	/^set-option -g command-alias[1] "splitp=split-window"$/;"	k
+style fg	tmux.conf	/^set -g window-active-style fg=default,bg=default$/;"	k
+style fg	tmux.conf	/^set -g window-style fg=default,bg=default$/;"	k
+style fg	tmux.conf	/^set-option -g message-command-style fg=yellow,bg=black$/;"	k
+style fg	tmux.conf	/^set-option -g message-style fg=colour232,bg=colour16,bright$/;"	k
+style fg	tmux.conf	/^set-option -g status-style fg=colour137,bg=colour38$/;"	k
+window	tmux.conf	/^set-option -g command-alias[4] "choose-window=choose-tree -w"$/;"	k
