@@ -98,7 +98,7 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # tmuxinator
-export TMUXINATOR_CONFIG="home/peara/tmuxinator"
+export TMUXINATOR_CONFIG="/home/peara/tmuxinator"
 source ~/.tmuxinator.zsh
 
 echo 'load nvm'

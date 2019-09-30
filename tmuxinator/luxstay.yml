@@ -51,5 +51,5 @@ windows:
       - ls
   - docker:
       - cd host-service
-      - npm run dc:up
-      - npm run dev
+      - npm run start:all
+      - pwd
