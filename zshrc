@@ -98,7 +98,7 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # tmuxinator
-export TMUXINATOR_CONFIG="home/peara/.config/tmuxinator"
+export TMUXINATOR_CONFIG="/home/peara/.config/tmuxinator"
 source ~/.tmuxinator.zsh
 
 export NVM_DIR="$HOME/.nvm"
