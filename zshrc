@@ -108,10 +108,6 @@ export NVM_DIR="$HOME/.nvm"
 # yarn bin
 export PATH="$PATH:`yarn global bin`"
 
-# For bcpf development
-export PATH=$PATH:/usr/local/go/bin export GOPATH=$HOME/projects/bcpf-v2/bcpf-api-server/fabric-env/chaincode
-export PATH=$PATH:$GOPATH/bin
-
 setopt noincappendhistory
 setopt nosharehistory
 
