@@ -97,6 +97,9 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# ignore Ctrl D
+IGNOREEOF=10
+
 # tmuxinator
 export TMUXINATOR_CONFIG="/home/peara/tmuxinator"
 source ~/.tmuxinator.zsh
